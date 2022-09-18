@@ -1,19 +1,19 @@
 {
-    "taskRunnerOptions": {
-        "default": {
-            "runner": "nx/tasks-runners/deafult",
-            "options": {
-                "cacheableOperations": ["build"]
-            }
-        }
-    },
-    "nameInputs": {
-        "noMarkdown": ["!{projectRoot/**/*.md}"],
-        "noTest": ["!{projectRoot/**/*.spec.tsx}", "!{projectRoot/**/*.spec.ts}"]
-    },
-    "targetDefaults": {
-        "build": {
-            "inputs": []
-        }
+  "taskRunnerOptions": {
+    "default": {
+      "runner": "nx/tasks-runners/deafult",
+      "options": {
+        "cacheableOperations": ["build"]
+      }
     }
+  },
+  "nameInputs": {
+    "noMarkdown": ["!{projectRoot/**/*.md}"],
+    "noTest": ["!{projectRoot/**/*.spec.tsx}", "!{projectRoot/**/*.spec.ts}"]
+  },
+  "targetDefaults": {
+    "build": {
+      "inputs": []
+    }
+  }
 }
