@@ -8,7 +8,8 @@
     "lint:all": "pnpm -r lint",
     "lint:fix": "pnpm lint --fix",
     "lint:fix:all": "pnpm -r lint:fix",
-    "pretty": "prettier --write \"./**/*.{ts,tsx,json,css,md}\""
+    "pretty": "prettier --write \"./**/*.{ts,tsx,json,css,md}\"",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -26,5 +27,9 @@
     "nx": "^14.7.5",
     "prettier": "^2.7.1",
     "typescript": "^4.8.3"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": "eslint --cache --fix",
+    "*.{js,ts,tsx,json,css,md}": "prettier --write"
   }
 }
