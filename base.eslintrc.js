@@ -1,14 +1,12 @@
 module.exports = {
     root: true,
     parser: '@typescript-eslint/parser',
+    plugins: [
+        '@typescipt-eslint',
+    ],
     parserOptions: {
         project: './tsconfig.json'
     },
-    plugins: [
-        '@typescipt-eslint',
-        'prettier',
-    ],
-    ignorePatterns: [],
     overrides: [{
         files: ['*.spec.{ts. tsx}'],
     }],

@@ -1,19 +1,10 @@
 {
-  "taskRunnerOptions": {
+  "tasksRunnerOptions": {
     "default": {
-      "runner": "nx/tasks-runners/deafult",
+      "runner": "nx/tasks-runners/default",
       "options": {
-        "cacheableOperations": ["build"]
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
       }
-    }
-  },
-  "nameInputs": {
-    "noMarkdown": ["!{projectRoot/**/*.md}"],
-    "noTest": ["!{projectRoot/**/*.spec.tsx}", "!{projectRoot/**/*.spec.ts}"]
-  },
-  "targetDefaults": {
-    "build": {
-      "inputs": []
     }
   }
 }

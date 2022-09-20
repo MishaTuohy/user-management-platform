@@ -2,14 +2,17 @@
   "name": "user-management-platform",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "16.15.1",
+    "pnpm": "7.12.1"
+  },
   "main": "index.js",
   "scripts": {
-    "lint": "eslint './*.{js,json}' --max-warnings=0",
-    "lint:all": "pnpm -r lint",
+    "lint": "eslint --ext .js,.ts --max-warnings=0",
+    "lint:all": "nx run-many --target=lint",
     "lint:fix": "pnpm lint --fix",
-    "lint:fix:all": "pnpm -r lint:fix",
-    "pretty": "prettier --write \"./**/*.{ts,tsx,json,css,md}\"",
-    "prepare": "husky install"
+    "lint:fix:all": "nx run-many --target=lint:fix",
+    "pretty": "prettier --write \"./**/*.{ts,tsx,json,css,md}\""
   },
   "keywords": [],
   "author": "",
