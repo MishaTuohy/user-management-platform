@@ -1,1 +1,1 @@
-export * from './rest';
+export type { IEntitlementRestService, IRoleRestService, IUserRestService } from './rest';
