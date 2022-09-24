@@ -1,5 +1,5 @@
 {
-  "name": "shared-components",
+  "name": "shared-services",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,5 +9,15 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "class-transformer": "^0.5.1",
+    "class-validator-jsonschema": "^3.1.1",
+    "envalid": "^7.3.1",
+    "routing-controllers": "^0.9.0",
+    "routing-controllers-openapi": "^3.1.0",
+    "shared-entities": "workspace:^1.0.0",
+    "shared-interfaces": "workspace:^1.0.0",
+    "swagger-ui-express": "^4.5.0"
+  }
 }

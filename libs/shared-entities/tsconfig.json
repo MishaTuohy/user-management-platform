@@ -3,6 +3,5 @@
   "compilerOptions": {
     "outDir": "./build"
   },
-  "include": ["."],
-  "exclude": ["dist", "node_modules", "**.spec.ts"]
+  "exclude": ["lib"]
 }
