@@ -1,3 +1,1 @@
-export interface RoleEntity {
-
-}
+export interface RoleEntity {}

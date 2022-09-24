@@ -1,3 +1,1 @@
-export interface UserResponse {
-
-}
+export interface UserResponse {}

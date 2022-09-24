@@ -1,3 +1,1 @@
-export interface EntitlementEntity {
-
-}
+export interface EntitlementEntity {}

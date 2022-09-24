@@ -1,3 +1,1 @@
-export interface IResponse<Type> {
-
-}
+export interface IResponse<Type> {}

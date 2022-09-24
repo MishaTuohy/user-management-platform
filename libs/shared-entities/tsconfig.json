@@ -1,7 +1,7 @@
 {
   "extends": "../../base.tsconfig.json",
   "compilerOptions": {
-    "outDir": "./build",
+    "outDir": "./build"
   },
   "include": ["."],
   "exclude": ["dist", "node_modules", "**.spec.ts"]
