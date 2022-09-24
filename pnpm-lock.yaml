@@ -14,9 +14,11 @@ importers:
       mrm: ^4.1.6
       nx: ^14.7.5
       prettier: ^2.7.1
+      shared-entities: workspace:^1.0.0
       typescript: ^4.8.3
     dependencies:
       mrm: 4.1.6
+      shared-entities: link:libs/shared-entities
     devDependencies:
       '@typescript-eslint/eslint-plugin': 5.37.0_22c5fnooleyfkzrkkgdmel5kmi
       '@typescript-eslint/parser': 5.37.0_irgkl5vooow2ydyo6aokmferha
@@ -32,10 +34,16 @@ importers:
   apps/auth-api:
     specifiers: {}
 
-  apps/user-management-api:
+  apps/auth-platform:
     specifiers: {}
 
-  apps/user-management-ui:
+  apps/user-management-api:
+    specifiers:
+      shared-entities: workspace:*
+    dependencies:
+      shared-entities: link:../../libs/shared-entities
+
+  apps/user-management-platform:
     specifiers: {}
 
   libs/shared-components:

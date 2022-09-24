@@ -1,1 +1,1 @@
-export * from './Entitlement';
+export * from './EntitlementEntity';
