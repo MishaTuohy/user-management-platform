@@ -6,7 +6,6 @@
     "node": "16.15.1",
     "pnpm": "7.12.1"
   },
-  "main": "index.js",
   "scripts": {
     "test": "jest",
     "lint": "eslint --ext .js,.ts --max-warnings=0",
